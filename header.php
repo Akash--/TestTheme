@@ -5,21 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Learn website" />
-    <script src="application/x-javascript"> addEventListener("load", function() {
-    setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1);
-    }</script>
-    <link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+    <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
     <!-- Custom Theme files -->
-    <link href="style.css?var=1.1" rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="css/jquery.countdown.css" />
     <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
-      <!----font-Awesome----->
-      <link href="css/font-awesome.css" rel="stylesheet">
-      <!----font-Awesome----->
+      <!-font-Awesome-->
+      <link href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.css" rel="stylesheet">
+      <!----font-Awesome-->
+      <?php wp_head(); ?>
     </head>
+
     <body>
       <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -76,4 +73,3 @@
         </div>
         <!--/.navbar-collapse-->
       </nav>
-  </head>
